@@ -39,6 +39,37 @@ export const CustomShapeDividerTop = styled.div`
     z-index: 2;
 `;
 
+export const CustomShapeDividerBottom = styled.div`
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+
+    & svg {
+        position: relative;
+        display: block;
+        width: calc(108% + 1.3px);
+        height: 138px;
+    }
+
+    & .shape-fill {
+        fill: #0f0f0f;
+    }
+
+    /** For mobile devices **/
+    @media (max-width: 767px) {
+        & svg {
+            width: calc(196% + 1.3px);
+            height: 104px;
+        }
+    }
+
+    z-index: 2;
+`;
+
 export const BoxSection = styled.section`
     display: flex;
     flex: 1;
@@ -102,6 +133,7 @@ export const Links = styled.div`
 `;
 
 export const Link = styled.a`
+    text-decoration: none;
     display: flex;
     justify-content: center;
     padding: 1rem 2.5rem;

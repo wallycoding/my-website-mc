@@ -1,25 +1,4 @@
-import { createGlobalStyle, keyframes } from "styled-components";
-
-const fadein = keyframes`
-    0% {
-        opacity: 0;
-        transform: translateY(100px);
-    }
-    50% {
-        opacity: 0.1;
-    }
-    100% {
-        opacity: default;
-        transform: default;
-    }
-`;
-
-const fadeout = keyframes`
-    to {
-        opacity: 0;
-        transform: translateY(-100px);
-    }
-`;
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
 
@@ -66,18 +45,6 @@ export const GlobalStyles = createGlobalStyle`
             border-radius: 50px;
             
         }
-    }
-
-
-    [data-animation] {
-        opacity: 0
-    }
-    [data-animation="on"] {
-        animation: ${fadein} 0.8s linear;
-        opacity: 1;
-    }
-    [data-animation="off"] {
-        animation: linear ${fadeout} 0.8s;
     }
 
 `;

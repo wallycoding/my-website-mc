@@ -52,12 +52,7 @@ const Header: React.FC = () => {
                 <Details>
                     <FieldDetail>
                         <Title>Mente Codificada</Title>
-                        <Description data-aos="dade-up">
-                            Bem-vindo ao Mente Codificada, meu nome é Wallyson e
-                            sou o criador deste site, entre em contato caso
-                            deseje produzir o seu site ou saber mais sobre mim e
-                            meus trabalhos.
-                        </Description>
+                        <Description>Bem-vindo ao Mente Codificada, aqui você poderá obter serviços ou até mesmo tirar dúvidas sobre programação e assunto relacionados a tecnologia, você pode saber mais sobre mim ou clicar no botão logo abaixo para obter contato.</Description>
                     </FieldDetail>
                     <Buttons>
                         <Button onClick={linkTo("contact-me")}>Contato</Button>

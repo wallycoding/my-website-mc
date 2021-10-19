@@ -11,6 +11,36 @@ export const Container = styled.div`
     }
 `;
 
+export const CustomShapeDividerTop = styled.div`
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+
+    & svg {
+        position: relative;
+        display: block;
+        width: calc(108% + 1.3px);
+        height: 138px;
+    }
+
+    & .shape-fill {
+        fill: #0f0f0f;
+    }
+
+    /** For mobile devices **/
+    @media (max-width: 767px) {
+        & svg {
+            width: calc(196% + 1.3px);
+            height: 104px;
+        }
+    }
+
+    z-index: 2;
+`;
+
 export const CustomShapeDividerBottom = styled.div`
     position: absolute;
     bottom: 0;
